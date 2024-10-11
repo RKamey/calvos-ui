@@ -10,7 +10,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/main.ts'),
       name: 'vuamm-components',
-      fileName: 'vuam-components',
+      fileName: 'vuamm-components',
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'react/jsx-runtime'],
