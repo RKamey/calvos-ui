@@ -33,8 +33,8 @@ const DashboardCard = ({
   const handleClick = () => {
     if (isExternalLink) {
       window.open(path, '_blank');
-    } else if (!isApplication && path) {
-      window.location.hash = path;
+    } else if (!isApplication) {
+      window.location.href = path || '';
     }
   };
 
