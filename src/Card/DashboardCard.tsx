@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Card, Typography, Tag } from 'antd';
 import { useNavigate } from 'react-router-dom';
 
-const { Title: AntTitle, Text } = Typography;
+const { Title, Text } = Typography;
 
 interface TagProps {
   color: string;
@@ -17,7 +17,6 @@ interface DashboardCardProps {
   description: string;
   path?: string | null;
   tags?: TagProps[];
-  onClick?: () => void;
 }
 
 const DashboardCard = ({ 
@@ -26,19 +25,15 @@ const DashboardCard = ({
   title, 
   description, 
   path, 
-  tags,
-  onClick 
+  tags 
 }: DashboardCardProps) => {
-  const [isHovered, setIsHovered] = useState(false);
   const navigate = useNavigate();
+  const [isHovered, setIsHovered] = useState(false);
   const isExternalLink = path && path.startsWith('http');
   const isApplication = path === null;
-  const isClickable = !!onClick || (!!path && !isApplication);
 
   const handleClick = () => {
-    if (onClick) {
-      onClick();
-    } else if (isExternalLink) {
+    if (isExternalLink) {
       window.open(path, '_blank');
     } else if (!isApplication && path) {
       navigate(path);
@@ -47,15 +42,15 @@ const DashboardCard = ({
 
   return (
     <Card
-      hoverable={isClickable}
+      hoverable={!isApplication}
       onClick={handleClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className={`
         w-full h-[300px] rounded-2xl overflow-hidden transition-all duration-300
         border-none bg-white flex flex-col
-        ${isHovered && isClickable ? 'shadow-xl -translate-y-1' : 'shadow-lg'}
-        ${isClickable ? 'cursor-pointer' : 'cursor-default'}
+        ${isHovered && !isApplication ? 'shadow-xl -translate-y-1' : 'shadow-lg'}
+        ${isApplication ? 'cursor-default' : 'cursor-pointer'}
       `}
       styles={{
         body: {
@@ -76,9 +71,9 @@ const DashboardCard = ({
       </div>
       <div className="p-5 flex-1 flex flex-col justify-between">
         <div>
-          <AntTitle level={3} className={`text-black m-0 mb-2 transition-all duration-300 ${isHovered ? '-translate-y-0.5' : ''}`}>
+          <Title level={3} className={`text-black m-0 mb-2 transition-all duration-300 ${isHovered ? '-translate-y-0.5' : ''}`}>
             {title}
-          </AntTitle>
+          </Title>
           <Text className={`text-sm text-gray-600 transition-all duration-300 ${isHovered ? 'opacity-100' : 'opacity-80'}`}>
             {description}
           </Text>
