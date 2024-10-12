@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Card, Typography, Tag } from 'antd';
+import { useNavigate } from 'react-router-dom';
 
 const { Title: AntTitle, Text } = Typography;
 
@@ -29,6 +30,7 @@ const DashboardCard = ({
   onClick 
 }: DashboardCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
   const isExternalLink = path && path.startsWith('http');
   const isApplication = path === null;
   const isClickable = !!onClick || (!!path && !isApplication);
@@ -39,7 +41,7 @@ const DashboardCard = ({
     } else if (isExternalLink) {
       window.open(path, '_blank');
     } else if (!isApplication && path) {
-      // Handle internal navigation if needed
+      navigate(path);
     }
   };
 
