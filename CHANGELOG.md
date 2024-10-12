@@ -1,3 +1,10 @@
+## [0.3.1](https://github.com/RKamey/vuamm-components/compare/v0.3.0...v0.3.1) (2024-10-12)
+
+
+### Bug Fixes
+
+* deploy, attempt 1 ([d4b34e0](https://github.com/RKamey/vuamm-components/commit/d4b34e09463fdf4f8ae9c28062269ac97c1ddd0e))
+
 # [0.3.0](https://github.com/RKamey/vuamm-components/compare/v0.2.0...v0.3.0) (2024-10-11)
 
 
