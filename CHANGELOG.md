@@ -1,3 +1,10 @@
+## [0.3.4](https://github.com/RKamey/vuamm-components/compare/v0.3.3...v0.3.4) (2024-10-12)
+
+
+### Bug Fixes
+
+* redirect react router dom ([bb0ffb9](https://github.com/RKamey/vuamm-components/commit/bb0ffb9839060bed86ddcaffc831a4253e864d0b))
+
 ## [0.3.3](https://github.com/RKamey/vuamm-components/compare/v0.3.2...v0.3.3) (2024-10-12)
 
 
