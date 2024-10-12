@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Card, Typography, Tag } from 'antd';
-import { useNavigate } from 'react-router-dom';
 
 const { Title, Text } = Typography;
 
@@ -19,15 +18,14 @@ interface DashboardCardProps {
   tags?: TagProps[];
 }
 
-const DashboardCard = ({ 
-  icon, 
-  color, 
-  title, 
-  description, 
-  path, 
-  tags 
+const DashboardCard = ({
+  icon,
+  color,
+  title,
+  description,
+  path,
+  tags
 }: DashboardCardProps) => {
-  const navigate = useNavigate();
   const [isHovered, setIsHovered] = useState(false);
   const isExternalLink = path && path.startsWith('http');
   const isApplication = path === null;
@@ -36,7 +34,7 @@ const DashboardCard = ({
     if (isExternalLink) {
       window.open(path, '_blank');
     } else if (!isApplication && path) {
-      navigate(path);
+      window.location.hash = path;
     }
   };
 
@@ -61,8 +59,8 @@ const DashboardCard = ({
         }
       }}
     >
-      <div 
-        className={`p-8 text-center transition-all duration-300 ${isHovered ? 'scale-105' : ''}`}
+      <div
+        className={`p-8 flex justify-center items-center transition-all duration-300 ${isHovered ? 'scale-105' : ''}`}
         style={{ backgroundColor: color }}
       >
         <div className={`text-5xl text-white transition-all duration-300 ${isHovered ? '-translate-y-1' : ''}`}>
@@ -80,8 +78,8 @@ const DashboardCard = ({
         </div>
         <div className="flex flex-wrap gap-1 mt-4">
           {tags && tags.map((tag, index) => (
-            <Tag 
-              key={index} 
+            <Tag
+              key={index}
               color={tag.color}
               className={`
                 px-3 py-1 rounded-full text-xs inline-flex items-center gap-1 
