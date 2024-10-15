@@ -1,3 +1,10 @@
+# [0.5.0](https://github.com/RKamey/vuamm-components/compare/v0.4.0...v0.5.0) (2024-10-15)
+
+
+### Features
+
+* **appconfig wrapper:** update wrapper ([e1426e0](https://github.com/RKamey/vuamm-components/commit/e1426e07f0ff9164e49a9b302e745447e209edf8))
+
 # [0.4.0](https://github.com/RKamey/vuamm-components/compare/v0.3.4...v0.4.0) (2024-10-15)
 
 
