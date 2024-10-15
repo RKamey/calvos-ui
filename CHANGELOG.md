@@ -1,3 +1,10 @@
+# [0.4.0](https://github.com/RKamey/vuamm-components/compare/v0.3.4...v0.4.0) (2024-10-15)
+
+
+### Features
+
+* importación de wrapperApp ([f99dc89](https://github.com/RKamey/vuamm-components/commit/f99dc894e4900e4b579f6490c72533bb30ff7ea7))
+
 ## [0.3.4](https://github.com/RKamey/vuamm-components/compare/v0.3.3...v0.3.4) (2024-10-12)
 
 
