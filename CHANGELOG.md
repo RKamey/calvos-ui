@@ -1,3 +1,10 @@
+# [0.6.0](https://github.com/RKamey/vuamm-components/compare/v0.5.0...v0.6.0) (2024-10-15)
+
+
+### Features
+
+* **main:** export wrapperApp ([3077b2b](https://github.com/RKamey/vuamm-components/commit/3077b2b29c8ae58eaac3090ec32dd2009e55bc5b))
+
 # [0.5.0](https://github.com/RKamey/vuamm-components/compare/v0.4.0...v0.5.0) (2024-10-15)
 
 
