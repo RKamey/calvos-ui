@@ -2,7 +2,7 @@ import type { ThemeConfig } from 'antd';
 
 const theme: ThemeConfig = {
   token: {
-    fontFamily: 'Montserrat, sans-serif',
+    fontFamily: 'Montserrat',
     colorPrimary: 'var(--pantone208)',
     colorTextSecondary: 'var(--pantone7421)', // Cambio realizado aquí
     colorTextBase: 'var(--pantone7540)',
