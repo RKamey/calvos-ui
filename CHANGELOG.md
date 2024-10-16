@@ -1,3 +1,10 @@
+# [0.7.0](https://github.com/RKamey/vuamm-components/compare/v0.6.1...v0.7.0) (2024-10-16)
+
+
+### Features
+
+* add useAuth ([928ed5e](https://github.com/RKamey/vuamm-components/commit/928ed5e38b117cd7eed7ad05bacdf4b82d2e9c10))
+
 ## [0.6.1](https://github.com/RKamey/vuamm-components/compare/v0.6.0...v0.6.1) (2024-10-15)
 
 
