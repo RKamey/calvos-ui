@@ -1,3 +1,10 @@
+# [0.10.0](https://github.com/RKamey/calvos-ui/compare/v0.9.0...v0.10.0) (2024-10-17)
+
+
+### Features
+
+* add generateAccessWrapper ([28d7a73](https://github.com/RKamey/calvos-ui/commit/28d7a732e415ca38504db093e36c7b3d1992a5fc))
+
 # [0.9.0](https://github.com/RKamey/vuamm-components/compare/v0.8.0...v0.9.0) (2024-10-17)
 
 
