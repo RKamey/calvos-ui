@@ -49,7 +49,7 @@ export interface Profile {
   profile_name: string;
 }
 
-interface State {
+export interface State {
   user: User | null;
   profiles: Profile[];
   sessionStatus: SESSION_STATUS;
