@@ -9,8 +9,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/main.ts'),
-      name: 'vuamm-components',
-      fileName: 'vuamm-components',
+      name: 'calvos-ui',
+      fileName: 'calvos-ui',
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'react/jsx-runtime'],

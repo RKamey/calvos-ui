@@ -1,16 +1,16 @@
 {
-  "name": "vuamm-components",
+  "name": "calvos-ui",
   "version": "0.8.0",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/vuamm-components.umd.cjs",
-  "module": "./dist/vuamm-components.js",
+  "main": "./dist/calvos-ui.umd.cjs",
+  "module": "./dist/calvos-ui.js",
   "exports": {
     ".": {
-      "import": "./dist/vuamm-components.js",
-      "require": "./dist/vuamm-components.umd.cjs"
+      "import": "./dist/calvos-ui.js",
+      "require": "./dist/calvos-ui.umd.cjs"
     },
     "./dist/style.css": "./dist/style.css"
   },
