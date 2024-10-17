@@ -1,3 +1,10 @@
+# [0.9.0](https://github.com/RKamey/vuamm-components/compare/v0.8.0...v0.9.0) (2024-10-17)
+
+
+### Features
+
+* **package.json:** update library name ([deced2e](https://github.com/RKamey/vuamm-components/commit/deced2e70acd135722058904f2810fe35f67e81e))
+
 # [0.8.0](https://github.com/RKamey/vuamm-components/compare/v0.7.0...v0.8.0) (2024-10-17)
 
 
