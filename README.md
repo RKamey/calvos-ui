@@ -1,6 +1,7 @@
 <div align="center" >
-  <img src="https://github.com/user-attachments/assets/79afedab-a5bb-4701-92cc-6bcfad61133a" alt="Calvos" width="300" />
+  <img src="https://github.com/user-attachments/assets/f22fcd44-6d3c-4445-a428-f6fe2ed5ef41" alt="Calvos" width="300" />
 </div>
+
 
 <h1 align="center">Calvos UI</h1>
 
