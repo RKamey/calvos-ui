@@ -1,5 +1,5 @@
 <div align="center" >
-  <img src="https://github.com/user-attachments/assets/a8aca2d0-b166-47ca-b609-d3186a36ca13" alt="Calvos" width="300" />
+  <img src="https://github.com/user-attachments/assets/79afedab-a5bb-4701-92cc-6bcfad61133a" alt="Calvos" width="300" />
 </div>
 
 <h1 align="center">Calvos UI</h1>
@@ -49,3 +49,62 @@ Luego, puedes usarlo en tu JSX o TSX
 ```tsx
 <MiComponente prop1="valor" />
 ```
+
+## Componentes
+### Dashboard Card
+`DashboardCard` es un componente de React que crea una tarjeta interactiva para un dashboard. Está diseñado para mostrar información resumida y proporcionar navegación a otras partes de la aplicación o a enlaces externos.
+
+### Características
+
+- Diseño atractivo con un icono personalizable y fondo de color.
+- Título y descripción para cada tarjeta.
+- Soporte para etiquetas opcionales con icono y texto.
+- Navegación interna usando React Router.
+- Apertura de enlaces externos en una nueva pestaña.
+
+### Dependencias
+
+- React
+- prop-types
+- antd (Ant Design)
+- react-router-dom
+
+### Propiedades
+
+| Propiedad   | Tipo   | Requerido | Descripción                                              |
+|-------------|--------|-----------|----------------------------------------------------------|
+| icon        | node   | Sí        | Icono a mostrar en la parte superior de la tarjeta        |
+| color       | string | Sí        | Color de fondo para el área del icono                    |
+| title       | string | Sí        | Título de la tarjeta                                     |
+| description | string | Sí        | Descripción breve de la tarjeta                          |
+| path        | string | Sí        | Ruta de navegación o URL externa                         |
+| tag         | object | No        | Objeto con propiedades para la etiqueta (opcional)       |
+
+### Propiedades del tag (opcional)
+
+| Propiedad | Tipo   | Descripción               |
+|-----------|--------|---------------------------|
+| color     | string | Color de la etiqueta       |
+| icon      | node   | Icono para la etiqueta     |
+| text      | string | Texto de la etiqueta       |
+
+### Uso
+
+```jsx
+import DashboardCard from './DashboardCard';
+
+<DashboardCard
+  icon={<YourIcon />}
+  color="#f0f0f0"
+  title="Título de la Tarjeta"
+  description="Descripción breve de la tarjeta."
+  path="/ruta-interna"
+  tag={{
+    color: "blue",
+    icon: <TagIcon />,
+    text: "Etiqueta"
+  }}
+/>
+
+```
+
