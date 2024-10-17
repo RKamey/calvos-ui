@@ -1,3 +1,10 @@
+# [0.8.0](https://github.com/RKamey/vuamm-components/compare/v0.7.0...v0.8.0) (2024-10-17)
+
+
+### Features
+
+* add generateAccessWrapper ([dc9dca8](https://github.com/RKamey/vuamm-components/commit/dc9dca80e7dfe0de8bf90aac50922b4e0dae37ed))
+
 # [0.7.0](https://github.com/RKamey/vuamm-components/compare/v0.6.1...v0.7.0) (2024-10-16)
 
 
