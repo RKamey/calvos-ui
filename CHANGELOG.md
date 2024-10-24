@@ -1,3 +1,10 @@
+# [0.11.0](https://github.com/RKamey/calvos-ui/compare/v0.10.0...v0.11.0) (2024-10-24)
+
+
+### Features
+
+* **v-layout:** add v-layout component ([7ab2a3a](https://github.com/RKamey/calvos-ui/commit/7ab2a3a7682f2ecaecfcb802a28a2954ef1da388))
+
 # [0.10.0](https://github.com/RKamey/calvos-ui/compare/v0.9.0...v0.10.0) (2024-10-17)
 
 
