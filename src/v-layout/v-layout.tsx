@@ -40,7 +40,7 @@ interface AppLayoutProps {
   onNavigate?: (path: string) => void;
 }
 
-export default function AppLayout({
+const AppLayout = ({
   children,
   menuItems = [],
   sideBarItems = [],
@@ -51,7 +51,7 @@ export default function AppLayout({
   key = '',
   Loader = () => null,
   onNavigate = () => {}
-}: AppLayoutProps) {
+}: AppLayoutProps) => {
   const [hasSession, setHasSession] = useState<boolean>(false);
   const [username, setUsername] = useState<string>('');
   const [wasChecked, setWasChecked] = useState<boolean>(false);
@@ -347,3 +347,5 @@ export default function AppLayout({
     </>
   );
 }
+
+export { AppLayout };
