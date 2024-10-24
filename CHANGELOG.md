@@ -1,3 +1,10 @@
+# [0.12.0](https://github.com/RKamey/calvos-ui/compare/v0.11.0...v0.12.0) (2024-10-24)
+
+
+### Features
+
+* **v-layout:** add AppLayout component and export it ([ad294b5](https://github.com/RKamey/calvos-ui/commit/ad294b5455d5aa59627ec5d52ec80950e9f08e82))
+
 # [0.11.0](https://github.com/RKamey/calvos-ui/compare/v0.10.0...v0.11.0) (2024-10-24)
 
 
