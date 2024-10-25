@@ -7,4 +7,4 @@ export { WrapperApp } from './WrapperApp/WrapperApp';
 export { createAuthStore } from './useAuth/useAuth'
 export { SESSIONS_STATUS } from './useAuth/useAuth'
 export { generateAccessWrapper } from './AccessWrapper/generateAccessWrapper';
-export { AppLayout } from './v-layout/v-layout';
+export { Calvout } from './Calvout/Calvout';
