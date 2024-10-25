@@ -1,0 +1,302 @@
+:root {
+  --pantone208: #5b5356;
+  --pantone7421: #612233;
+  --pantone465: #b69664;
+  --pantone465-50: #d1bfa0;
+  --pantone194: #923244;
+  --pantone7540: #4b4f54;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.48);
+  border-bottom: 3px solid var(--pantone194);
+  padding: 0 24px;
+  height: 65px;
+  top: 5px;
+  left: 15px;
+  right: 15px;
+  z-index: 1000;
+  position: fixed;
+  border-radius: 35px;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  box-shadow: 0 2px 8px rgba(146, 50, 68, 0.15);
+  width: calc(100% - 30px);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin: 8px 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+  margin: 8px 0;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.desktop-menu {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin-right: 24px;
+}
+
+.desktop-menu .ant-menu-item {
+  padding: 0 16px;
+  border-radius: 8px;
+  margin: 0 4px;
+  transition: all 0.3s ease;
+}
+
+.desktop-menu .ant-menu-item,
+.desktop-menu .ant-menu-submenu-title {
+  font-size: 14px;
+}
+
+.mobile-menu-button {
+  display: none;
+  border-radius: 8px;
+  color: var(--pantone194);
+}
+
+button.ant-btn-user {
+  background-color: rgba(255, 255, 255, 0.78);
+  cursor: pointer;
+}
+
+.login-button {
+  margin-left: 16px;
+  border-radius: 8px;
+  background: rgba(146, 50, 68, 0.9);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  background: rgba(146, 50, 68, 1);
+  transform: translateY(-1px);
+}
+
+.ant-layout-sider {
+  background: rgba(255, 255, 255, 0.98);
+  border-right: 1px solid rgba(240, 240, 240, 0.8);
+  box-shadow: 2px 0 8px rgba(146, 50, 68, 0.1);
+  position: sticky !important;
+  top: 79px !important;
+  left: 15px !important;
+  right: auto !important;
+  bottom: 0 !important;
+  inset-inline-start: 15px !important;
+  height: calc(100vh - 79px) !important;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.ant-layout-sider-children {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  top: 79px !important;
+}
+
+.ant-layout-sider-trigger {
+  background: rgba(146, 50, 68, 0.9) !important;
+  border-radius: 0 0 15px 15px;
+}
+
+.sidebar-menu .ant-menu-item-selected {
+  background: rgba(146, 50, 68, 0.9) !important;
+  color: white !important;
+  border-radius: 8px;
+}
+
+.desktop-menu .ant-menu-item-selected {
+  background: rgba(146, 50, 68, 0.9) !important;
+  color: white !important;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.ant-menu-submenu:hover {
+  background: rgba(146, 50, 68, 0.9) !important;
+  border-radius: 8px;
+}
+
+.ant-menu-submenu-title:hover {
+  color: white !important;
+}
+
+li[role="menuitem"] {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 8px;
+  margin: 4px 8px;
+  transition: all 0.3s ease;
+}
+
+li[role="menuitem"].ant-menu-item-selected {
+  background: rgba(146, 50, 68, 0.9) !important;
+  color: white !important;
+}
+
+li[role="menuitem"]:hover {
+  background: rgba(146, 50, 68, 0.9) !important;
+  color: white !important;
+}
+
+li[role="menuitem"]:active {
+  background: rgba(146, 50, 68, 1) !important;
+  color: white !important;
+}
+
+.sidebar-menu {
+  height: 100%;
+  border-right: 0;
+  padding: 8px;
+}
+
+.main-content-layout {
+  margin-top: 65px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 24px;
+  background: rgba(240, 242, 245, 0.8);
+  min-height: calc(100vh - 95px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+}
+
+.main-content {
+  padding: 32px;
+  margin: 16px;
+  min-height: 280px;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(146, 50, 68, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.navigation-bar {
+  display: flex;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.back-button {
+  margin-right: 16px;
+  border-radius: 8px;
+  background: rgba(146, 50, 68, 0.9);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: rgba(146, 50, 68, 1);
+  transform: translateY(-1px);
+}
+
+.main-drawer,
+.side-drawer {
+  padding: 0;
+  margin-top: 15px;
+}
+
+.main-drawer .ant-drawer-content,
+.side-drawer .ant-drawer-content {
+  border-radius: 15px 0 0 15px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.drawer-menu {
+  height: 100%;
+  padding: 8px;
+}
+
+.ant-typography.app-title {
+  margin-left: 16px;
+  font-size: calc(12px + 0.8 * ((100vw - 320px) / 680));
+  color: var(--pantone194);
+}
+
+.breadcrumb {
+  background: rgba(255, 255, 255, 0.98);
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin: 8px 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 6px rgba(146, 50, 68, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 890px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .main-menu-button {
+    display: inline-block;
+  }
+  
+  .login-button {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 0 8px;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    width: calc(100% - 16px);
+  }
+
+  .header-left {
+    margin-right: 8px;
+  }
+
+  .header-right {
+    margin-left: 8px;
+  }
+
+  .desktop-menu {
+    margin-right: 0;
+  }
+  
+  .mobile-menu-button {
+    display: inline-block;
+  }
+
+  .main-content {
+    margin: 8px;
+    padding: 16px;
+  }
+
+  .main-content-layout {
+    margin: 85px 8px 8px 8px;
+    padding: 16px;
+  }
+}
