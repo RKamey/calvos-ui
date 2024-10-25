@@ -11,7 +11,7 @@ import Loader from '../components/spinGob';
 
 const { Header, Content, Sider } = Layout;
 
-const Calvout = ({
+export const Calvout = ({
   children: children = null,
   menuItems = [],
   sideBarItems = [],
@@ -415,4 +415,3 @@ const Calvout = ({
   );
 };
 
-export { Calvout };
