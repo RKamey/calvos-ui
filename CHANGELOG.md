@@ -1,3 +1,11 @@
+# [0.13.0](https://github.com/RKamey/calvos-ui/compare/v0.12.0...v0.13.0) (2024-10-25)
+
+
+### Features
+
+* **calvout:** implementación de layout ([2fa616b](https://github.com/RKamey/calvos-ui/commit/2fa616b83bb142cf177f66bc9e11b7093f179217))
+* **layout.css:** implementación de estilos ([4034dab](https://github.com/RKamey/calvos-ui/commit/4034dabb858d634da9c41b97ceab2c51adc93d84))
+
 # [0.12.0](https://github.com/RKamey/calvos-ui/compare/v0.11.0...v0.12.0) (2024-10-24)
 
 
